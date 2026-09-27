@@ -400,17 +400,37 @@ button, input, textarea { font: inherit; color: inherit; }
   position: relative;
   overflow: hidden;
 }
-.demo-card-img { min-height: 280px; color: var(--ink); }
+.demo-card-img {
+  min-height: 300px;
+  color: var(--ink);
+  background: #0a0a0c;
+  padding: 0;
+}
 .demo-card-bg {
   position: absolute; inset: 0;
   background-image: var(--card-img);
   background-size: cover;
   background-position: center;
-  filter: saturate(0.9) brightness(0.55);
+  filter: saturate(0.95) brightness(0.52);
   z-index: 0;
 }
-.demo-card-body { position: relative; z-index: 1; }
-.demo-card.featured { border-color: rgba(212,162,74,0.5); }
+.demo-card-bg::after {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7,7,8,0.2) 0%, rgba(7,7,8,0.45) 40%, rgba(7,7,8,0.92) 100%),
+    linear-gradient(90deg, rgba(7,7,8,0.35), transparent 55%);
+}
+.demo-card-body {
+  position: relative;
+  z-index: 1;
+  padding: 1.15rem 1.2rem;
+  margin-top: auto;
+}
+.demo-card.featured {
+  border-color: rgba(212,162,74,0.55);
+  box-shadow: 0 0 0 1px rgba(212,162,74,0.25), var(--shadow);
+}
 .demo-tag {
   display: inline-block;
   margin-bottom: 0.55rem;

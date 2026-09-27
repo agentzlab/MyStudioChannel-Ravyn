@@ -26,6 +26,7 @@ This is the sister build to Trinity's `agentzlab/MyStudioChannel-Remake` — sam
 - Big display type (Newsreader) with Instrument Sans UI
 - Dark-mode first — no light theme planned
 - Subtle footer badge: `Ravyn · MSC rebuild · 2026-09-26`
+- Full imagery deck: unique art per demo card + section plates for Programming Styles and Own Your Platform
 
 ## Tech stack
 
@@ -46,12 +47,17 @@ MyStudioChannel-Ravyn/
 ├── app.js
 ├── assets/
 │   ├── screenshot.png      # dark-mode hero shot (~1280×800)
-│   └── img/                # generated section plates
+│   └── img/                # generated section + demo plates
 │       ├── hero-channel-grid.png
 │       ├── about-studio.png
+│       ├── own-platform.png
 │       ├── packages-production.png
-│       ├── demo-talkshow.png
-│       ├── demo-story.png
+│       ├── programming-shelf.png
+│       ├── demo-talkshow-land.png
+│       ├── demo-xtronic.png
+│       ├── demo-indie.png
+│       ├── demo-podcast.png
+│       ├── demo-everyway.png
 │       ├── testimonials-warm.png
 │       ├── process-timeline.png
 │       └── cta-launch.png
