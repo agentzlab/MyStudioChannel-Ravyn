@@ -11,7 +11,7 @@
 
 ## Hero
 
-*Screenshot lands with the first build — the hero shot always represents the current state of the page.*
+![MyStudioChannel-Ravyn dark hero](assets/screenshot.png)
 
 ## What's inside
 
@@ -21,15 +21,17 @@ This is the sister build to Trinity's `agentzlab/MyStudioChannel-Remake` — sam
 
 ## Design language
 
-- Near-black grounds, warm gold/amber accents (carried over from the current site's identity)
-- Big confident display type, generous whitespace
+- Near-black grounds, warm gold/amber accents
+- **Editorial film-strip / channel-grid** — stacked chapter bands and horizontal programming rows (not a centered broadcast hero)
+- Big display type (Newsreader) with Instrument Sans UI
 - Dark-mode first — no light theme planned
+- Subtle footer badge: `Ravyn · MSC rebuild · 2026-09-26`
 
 ## Tech stack
 
 | Layer | Choice |
 |---|---|
-| Markup | Single static `index.html` |
+| Markup | Static `index.html` + `styles.css` + `app.js` |
 | Styling | Hand-written CSS, no framework |
 | Hosting | GitHub Pages (this repo, `main`) |
 
@@ -39,11 +41,22 @@ The source site (`jonbeatz/MyStudioChannel`, private) is Next.js + Payload CMS. 
 
 ```
 MyStudioChannel-Ravyn/
-├── index.html          # the rebuild (lands with Ravyn's build)
+├── index.html
+├── styles.css
+├── app.js
 ├── assets/
-│   └── screenshot.png  # dark-mode hero shot, refreshed on every build
+│   ├── screenshot.png      # dark-mode hero shot (~1280×800)
+│   └── img/                # generated section plates
+│       ├── hero-channel-grid.png
+│       ├── about-studio.png
+│       ├── packages-production.png
+│       ├── demo-talkshow.png
+│       ├── demo-story.png
+│       ├── testimonials-warm.png
+│       ├── process-timeline.png
+│       └── cta-launch.png
 ├── docs/
-│   └── reference.md    # source-site notes + build context
+│   └── reference.md
 ├── .nojekyll
 └── README.md
 ```
