@@ -3,846 +3,387 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Studio Channel — Creator Platforms</title>
+  <title>My Studio Channel — Your Channel, On Air</title>
   <meta name="description" content="We build studio-style websites that give creators the look and structure of a major network — powered by a custom plugin, built once and owned by you." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
 
-  <header class="site-header" id="top" data-site-header>
-    <div class="header-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">
-          <strong>My Studio Channel</strong>
-          <span>Creator Platforms</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="sr-only">Menu</span>
-        <span></span><span></span>
+  <header class="topbar" id="topbar">
+    <a class="wordmark" href="#top">MY STUDIO CHANNEL</a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#own">Own</a>
+      <a href="#packages">Packages</a>
+      <a href="#demos">Demos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="topbar-right">
+      <span class="on-air" aria-label="On air"><span class="on-air-dot" aria-hidden="true">●</span> ON AIR</span>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
       </button>
-      <nav class="site-nav mega-nav" id="site-nav" data-nav data-mega-nav>
-        <div class="mega-track" data-mega-track>
-          <span class="mega-highlight" data-mega-highlight aria-hidden="true"></span>
-
-          <div class="mega-item" data-mega-item>
-            <button type="button" class="mega-trigger" data-mega-trigger aria-expanded="false" aria-haspopup="true">About</button>
-            <div class="mega-panel" data-mega-panel hidden>
-              <div class="mega-panel-inner">
-                <a class="mega-link" href="#about">
-                  <strong>About My Studio Channel</strong>
-                  <span>Television-style platforms for creators</span>
-                </a>
-                <a class="mega-link" href="#ownership">
-                  <strong>Own Your Platform</strong>
-                  <span>No lock-in, no monthly platform fees</span>
-                </a>
-                <a class="mega-link" href="#experience">
-                  <strong>Since 2000</strong>
-                  <span>Built on experience, not guesswork</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="mega-item" data-mega-item>
-            <button type="button" class="mega-trigger" data-mega-trigger aria-expanded="false" aria-haspopup="true">Services</button>
-            <div class="mega-panel" data-mega-panel hidden>
-              <div class="mega-panel-inner mega-panel-grid">
-                <div class="mega-group">
-                  <p class="mega-heading">Build</p>
-                  <a class="mega-link" href="#packages">
-                    <strong>Build Packages</strong>
-                    <span>Creator Launch · Studio Pro · Network Platform</span>
-                  </a>
-                  <a class="mega-link" href="#audience">
-                    <strong>What You Get</strong>
-                    <span>Consulting, studio layout, custom plugin</span>
-                  </a>
-                </div>
-                <div class="mega-group">
-                  <p class="mega-heading">See it</p>
-                  <a class="mega-link" href="#demos">
-                    <strong>View Demos</strong>
-                    <span>Programming styles &amp; creator platforms</span>
-                  </a>
-                  <a class="mega-link" href="#process">
-                    <strong>A Simple, Guided Process</strong>
-                    <span>Consultation to launch in four steps</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a class="mega-plain" href="#demos" data-mega-plain>Demos</a>
-          <a class="mega-plain" href="#process" data-mega-plain>Process</a>
-
-          <div class="mega-item" data-mega-item>
-            <button type="button" class="mega-trigger" data-mega-trigger aria-expanded="false" aria-haspopup="true">Resources</button>
-            <div class="mega-panel" data-mega-panel hidden>
-              <div class="mega-panel-inner">
-                <a class="mega-link" href="#faq">
-                  <strong>Common Inquiries</strong>
-                  <span>Pricing, ownership, hosting, consulting</span>
-                </a>
-                <a class="mega-link" href="#intake">
-                  <strong>What We Need From You</strong>
-                  <span>Images, thumbnails, media, domain, hosting</span>
-                </a>
-                <a class="mega-link" href="#faq">
-                  <strong>Policies &amp; Requirements</strong>
-                  <span>Agreement, PayPal, revisions, response window</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <a class="mega-plain" href="#contact" data-mega-plain>Contact</a>
-        </div>
-        <a class="nav-cta btn-jelly" href="#contact" data-open-consult>Book Consultation</a>
-      </nav>
     </div>
-    <div class="nav-backdrop" data-nav-backdrop hidden></div>
   </header>
 
-  <main id="main">
-    <!-- HERO — left-rail editorial over channel-grid plate -->
-    <section class="band hero" id="hero" style="--plate: url('assets/img/hero-channel-grid.png')">
-      <div class="band-plate" aria-hidden="true"></div>
-      <div class="band-veil"></div>
-      <div class="sprocket sprocket-l" aria-hidden="true"></div>
-      <div class="sprocket sprocket-r" aria-hidden="true"></div>
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">For Creators Who Want More</p>
-          <h1>
-            <span>Your Content.</span>
-            <span>Your Channel.</span>
-            <span class="gold">Your Studio.</span>
-          </h1>
-          <p class="lede">We build studio-style websites that give creators the look and structure of a major network — powered by a custom plugin, built once and owned by you.</p>
-          <div class="hero-actions">
-            <button type="button" class="btn btn-gold btn-jelly" data-open-consult>Start With a Consultation</button>
-            <a class="btn btn-ghost" href="#demos">View Demos</a>
-          </div>
-        </div>
-        <aside class="hero-rail" aria-label="Platform stats">
-          <div class="stat"><strong>21+</strong><span>Years Experience</span></div>
-          <div class="stat"><strong>100%</strong><span>Platform Ownership</span></div>
-          <div class="stat"><strong>24/7</strong><span>Creator Support</span></div>
-          <div class="stat"><strong>$0</strong><span>Monthly Platform Fees</span></div>
-        </aside>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#own">Own</a>
+    <a href="#packages">Packages</a>
+    <a href="#demos">Demos</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <!-- ① Hero -->
+    <section class="hero signal-section" id="hero" data-signal>
+      <div class="hero-media" aria-hidden="true">
+        <img class="hero-img" src="assets/hero.jpg" alt="" />
+        <div class="hero-scrim"></div>
       </div>
-      <div class="film-edge" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      <div class="hero-inner">
+        <p class="eyebrow hero-choreo" data-choreo>FOR CREATORS WHO WANT MORE</p>
+        <h1 class="hero-title">
+          <span class="hero-line hero-choreo" data-choreo><span class="word">YOUR</span> <span class="word">CHANNEL.</span></span>
+          <span class="hero-line hero-gold hero-choreo" data-choreo><span class="word">ON</span> <span class="word">AIR.</span></span>
+        </h1>
+        <p class="hero-sub hero-choreo" data-choreo>We build studio-style websites that give creators the look and structure of a major network — powered by a custom plugin, built once and owned by you.</p>
+        <div class="hero-ctas hero-choreo" data-choreo>
+          <a class="btn btn-gold" href="#contact">START WITH A CONSULTATION ↗</a>
+          <a class="btn btn-ghost" href="#demos">VIEW DEMOS ↓</a>
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT — chapter band -->
-    <section class="band about" id="about" style="--plate: url('assets/img/about-studio.png')">
-      <div class="band-plate" aria-hidden="true"></div>
-      <div class="band-veil band-veil-heavy"></div>
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">01</span>
-          <span class="ch-label">About My Studio Channel</span>
-        </div>
-        <div class="chapter-body">
-          <h2>About My Studio Channel</h2>
-          <p>My Studio Channel helps creators launch their own television-style platforms online. From talk shows and cooking shows to podcasts and documentaries, we design clean, organized websites that showcase programming the way a real network would.</p>
-          <p>Because we're creators too, we understand what it takes to present your work professionally. Every platform includes a custom built-in plugin with step-by-step tutorials, plus access to our creator community for continued learning and support.</p>
-          <p class="pull">Built for creators, by creators — 20+ years of media experience</p>
-          <div class="bento bento-about" data-bento data-reveal>
-            <article class="bento-card bento-wide" data-spotlight data-reveal-item style="--stagger:0">
-              <span class="bento-icon" aria-hidden="true">▣</span>
+    <!-- ② Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-item">BUILT ONCE — OWNED FOREVER ✦ NO MONTHLY PLATFORM FEES ✦ NO PER-SUBSCRIBER CHARGES ✦ YOUR CONTENT. YOUR AUDIENCE. YOUR RULES ✦ </span>
+        <span class="ticker-item">BUILT ONCE — OWNED FOREVER ✦ NO MONTHLY PLATFORM FEES ✦ NO PER-SUBSCRIBER CHARGES ✦ YOUR CONTENT. YOUR AUDIENCE. YOUR RULES ✦ </span>
+        <span class="ticker-item">BUILT ONCE — OWNED FOREVER ✦ NO MONTHLY PLATFORM FEES ✦ NO PER-SUBSCRIBER CHARGES ✦ YOUR CONTENT. YOUR AUDIENCE. YOUR RULES ✦ </span>
+        <span class="ticker-item">BUILT ONCE — OWNED FOREVER ✦ NO MONTHLY PLATFORM FEES ✦ NO PER-SUBSCRIBER CHARGES ✦ YOUR CONTENT. YOUR AUDIENCE. YOUR RULES ✦ </span>
+      </div>
+    </div>
+
+    <!-- ③ Ownership -->
+    <section class="section own signal-section" id="own" data-signal>
+      <div class="wrap own-grid">
+        <div class="own-copy">
+          <p class="eyebrow">OWN YOUR PLATFORM</p>
+          <h2 class="display" data-words>Build once. Own forever.</h2>
+          <p class="lede">A professional streaming-style website built for you one time. No platform lock-in, no monthly subscriptions, and no per-subscriber fees.</p>
+          <p class="lede">You control the content. You control your audience. You control how it grows.</p>
+          <div class="pillars">
+            <article class="pillar">
+              <span class="pillar-num">01</span>
               <h3>Network-Style Layouts</h3>
-              <p>Present your content like a professional streaming network with structured shows and episodes.</p>
+              <p>Shows, episodes, and categories organized with broadcast clarity.</p>
             </article>
-            <article class="bento-card bento-tall" data-spotlight data-reveal-item style="--stagger:1">
-              <span class="bento-icon" aria-hidden="true">◎</span>
+            <article class="pillar">
+              <span class="pillar-num">02</span>
               <h3>Creator Community</h3>
-              <p>Access our exclusive creator community for continued learning and support as your channel grows.</p>
+              <p>A professional home designed around the people you reach.</p>
             </article>
-            <article class="bento-card" data-spotlight data-reveal-item style="--stagger:2">
-              <span class="bento-icon" aria-hidden="true">▸</span>
+            <article class="pillar">
+              <span class="pillar-num">03</span>
               <h3>Built-In Tutorials</h3>
-              <p>Custom plugin with step-by-step tutorials so you never feel left figuring things out alone.</p>
+              <p>Clear walkthroughs help you manage your platform after launch.</p>
             </article>
-            <article class="bento-card" data-spotlight data-reveal-item style="--stagger:3">
-              <span class="bento-icon" aria-hidden="true">✦</span>
+            <article class="pillar">
+              <span class="pillar-num">04</span>
               <h3>Ongoing Support</h3>
-              <p>Direct communication with the team building your site, plus guided walkthrough after launch.</p>
+              <p>Creator-to-creator help when your platform needs it.</p>
             </article>
           </div>
-          <a class="text-link" href="#process">Learn more about our process →</a>
+        </div>
+        <div class="own-plate">
+          <div class="gold-frame">
+            <img src="assets/about.jpg" alt="Creator studio broadcast plate" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- OWN YOUR PLATFORM — plated band -->
-    <section class="band ownership" id="ownership" style="--plate: url('assets/img/own-platform.png')">
-      <div class="band-plate" aria-hidden="true"></div>
-      <div class="band-veil band-veil-heavy"></div>
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">02</span>
-          <span class="ch-label">Own Your Platform</span>
-        </div>
-        <div class="chapter-body">
-          <h2>Own Your Platform</h2>
-          <p class="lede">A professional streaming-style website built for you one time. No platform lock-in, no monthly subscriptions, and no per-subscriber fees.</p>
-          <p>Unlike many creator platforms that charge monthly fees and additional costs for every subscriber, your platform is built for you to own and operate independently.</p>
-          <p>Once complete, the platform belongs to you. No hidden fees or platform restrictions.</p>
-          <div class="bento bento-own" data-bento data-reveal>
-            <article class="bento-card bento-wide" data-spotlight data-reveal-item style="--stagger:0">
-              <h3>No Platform Lock-in</h3>
-              <p>Your platform is built for you to own and operate independently. No monthly subscriptions, no per-subscriber fees.</p>
-            </article>
-            <article class="bento-card" data-spotlight data-reveal-item style="--stagger:1">
-              <h3>You Control Everything</h3>
-              <p>You control the content. You control your audience. You control how it grows.</p>
-            </article>
-            <article class="bento-card" data-spotlight data-reveal-item style="--stagger:2">
-              <h3>Built With You</h3>
-              <p>Every project is built with you involved in the process. You will meet with us, see the progress, and understand how your platform works before it launches.</p>
-            </article>
-          </div>
-          <div class="split-lists">
-            <div>
-              <h3>Our Support</h3>
-              <ul>
-                <li>Live virtual consulting sessions during development</li>
-                <li>Direct communication with the people building your site</li>
-                <li>Custom plugin development for your platform</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Built-in Tutorials</h3>
-              <ul>
-                <li>Built-in tutorials inside your website</li>
-                <li>Guided walkthrough after launch</li>
-                <li>Revision rounds during development</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ecosystem">
-            <h3>Your Own Ecosystem</h3>
-            <p>Your website is built so your content can grow without platform restrictions:</p>
-            <ul class="chips">
-              <li>Video libraries</li>
-              <li>Podcast or talk show episodes</li>
-              <li>Streaming-style layouts</li>
-              <li>Membership access if needed</li>
-              <li>Content categories and collections</li>
+    <!-- ④ Packages -->
+    <section class="section packages signal-section" id="packages" data-signal>
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">PACKAGES</p>
+          <h2 class="display" data-words>From creator site to private network.</h2>
+          <p class="lede">Three clear production levels, each built around ownership. Start with the platform that matches how you publish now — and where you want to grow.</p>
+        </header>
+        <div class="package-grid">
+          <article class="package-card">
+            <h3 class="package-name">Creator Launch</h3>
+            <p class="package-price">$5,800</p>
+            <p class="package-desc">Professional streaming-style website using YouTube video hosting.</p>
+            <ul class="package-bullets">
+              <li>Cinematic network-style website design</li>
+              <li>Custom YouTube video player layout</li>
+              <li>YouTube videos embedded without suggested videos</li>
+              <li>Streaming-style layout (like Netflix rows)</li>
+              <li>Mobile optimized</li>
+              <li>Brand colors &amp; typography setup</li>
+              <li>Revision rounds included</li>
+              <li>Built on WordPress + Divi</li>
+              <li>Tutorial walkthrough after launch</li>
             </ul>
-          </div>
-          <p class="community-note"><strong>Ongoing Learning Community</strong> — As your audience grows, your platform grows with you. Every My Studio Channel client receives free access to our creator community. <em>Free Access Included</em></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PACKAGES — programming row over plate -->
-    <section class="band packages" id="packages" style="--plate: url('assets/img/packages-production.png')">
-      <div class="band-plate" aria-hidden="true"></div>
-      <div class="band-veil band-veil-heavy"></div>
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">03</span>
-          <span class="ch-label">Build Packages</span>
-        </div>
-        <div class="chapter-body">
-          <h2>Build Packages</h2>
-          <p class="lede">A professional streaming-style website built for you one time. No platform lock-in, no monthly subscriptions, and no per-subscriber fees.</p>
-          <div class="package-row package-bento" role="list" data-reveal>
-            <article class="pkg" role="listitem" data-spotlight data-reveal-item style="--stagger:0">
-              <header>
-                <h3>Creator Launch</h3>
-                <p class="price">$5,800</p>
-              </header>
-              <p>Professional streaming-style website using YouTube video hosting.</p>
-              <p class="pay">Payment: 50% Deposit / 25% Midway / 25% Final</p>
-              <ul>
-                <li>Cinematic network-style website design</li>
-                <li>Custom YouTube video player layout</li>
-                <li>YouTube videos embedded without suggested videos</li>
-                <li>Streaming-style layout (like Netflix rows)</li>
-                <li>Mobile optimized</li>
-                <li>Brand colors &amp; typography setup</li>
-                <li>Revision rounds included</li>
-                <li>Built on WordPress + Divi</li>
-                <li>Tutorial walkthrough after launch</li>
-              </ul>
-              <p class="best"><strong>Best For:</strong> Creators who already host videos on YouTube and want a premium presentation layer.</p>
-              <button type="button" class="btn btn-ghost" data-open-consult>Get Started</button>
-            </article>
-            <article class="pkg pkg-featured" role="listitem" data-spotlight data-reveal-item style="--stagger:1">
-              <span class="badge">Most Popular</span>
-              <header>
-                <h3>Studio Pro</h3>
-                <p class="price">$10,800</p>
-              </header>
-              <p>Professional video platform with your own hosted player.</p>
-              <p class="pay">Everything in Creator Launch plus</p>
-              <ul>
-                <li>Custom Video Player</li>
-                <li>Video hosting via Bunny.net</li>
-                <li>Video delivery powered by Presto Player</li>
-                <li>No ads or platform branding</li>
-                <li>Faster streaming performance</li>
-                <li>Advanced video playback controls</li>
-              </ul>
-              <p class="best"><strong>Best For:</strong> Creators who want their own professional streaming environment without relying on YouTube.</p>
-              <button type="button" class="btn btn-gold btn-jelly" data-open-consult>Get Started</button>
-            </article>
-            <article class="pkg" role="listitem" data-spotlight data-reveal-item style="--stagger:2">
-              <header>
-                <h3>Network Platform</h3>
-                <p class="price">$18,800</p>
-              </header>
-              <p>A full content platform with private member access.</p>
-              <p class="pay">Everything in Studio Pro plus</p>
-              <ul>
-                <li>Custom Membership Website</li>
-                <li>Private login portal</li>
-                <li>Member-only video libraries</li>
-                <li>Paid subscriber access capability</li>
-                <li>Content protection</li>
-                <li>Structured video categories</li>
-                <li>Scalable platform structure</li>
-              </ul>
-              <p class="best"><strong>Best For:</strong> Creators launching their own streaming platform, academy, or subscription content network.</p>
-              <button type="button" class="btn btn-ghost" data-open-consult>Get Started</button>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROGRAMMING STYLES + DEMOS — shelf plate + unique card art -->
-    <section class="band demos" id="demos" style="--plate: url('assets/img/programming-shelf.png')">
-      <div class="band-plate" aria-hidden="true"></div>
-      <div class="band-veil band-veil-heavy"></div>
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">04</span>
-          <span class="ch-label">View Demos</span>
-        </div>
-        <div class="chapter-body">
-          <h2>Programming Styles We Support</h2>
-          <p class="lede">Whether you're launching a talk show, cooking show, podcast, or full series, your channel can be organized and presented like a professional network.</p>
-          <h3 class="subhead">See What Your Channel Could Look Like</h3>
-          <p>Your platform can be organized like a professional streaming network with structured shows, episodes, and categories. Everything is designed to help your content feel intentional, organized, and ready for a professional audience from day one.</p>
-          <ul class="check-list">
-            <li>Network-style layout that organizes your shows like a professional channel</li>
-            <li>Custom video players designed for a polished viewing experience</li>
-            <li>Structured programming layout that makes it easy for viewers to explore</li>
-            <li>Scalable platform design that can grow with your channel</li>
-          </ul>
-
-          <div class="demo-intro">
-            <h2>View Demos</h2>
-            <p>Take a look at some of the creator platforms and studio-style websites we've been building. More projects launching soon.</p>
-          </div>
-
-          <div class="demo-bento" role="list" data-bento data-reveal>
-            <article class="demo-card demo-bento-card featured demo-span-2" role="listitem" data-spotlight data-reveal-item style="--card-img: url('assets/img/demo-everyway.png'); --stagger:0">
-              <div class="demo-media" aria-hidden="true">
-                <div class="demo-card-bg"></div>
-              </div>
-              <div class="demo-card-body">
-                <span class="demo-tag">realTV-series — Featured Project</span>
-                <h3>Every Way Woman</h3>
-                <p>Cinematic storytelling platform with chapter navigation, behind-the-scenes content, and filmmaker profiles.</p>
-                <button type="button" class="demo-cta" data-open-demo="Every Way Woman">View concept →</button>
-              </div>
-            </article>
-            <article class="demo-card demo-bento-card" role="listitem" data-spotlight data-reveal-item style="--card-img: url('assets/img/demo-talkshow-land.png'); --stagger:1">
-              <div class="demo-media" aria-hidden="true">
-                <div class="demo-card-bg"></div>
-              </div>
-              <div class="demo-card-body">
-                <span class="demo-tag">msc-platform</span>
-                <h3>Talk Show Land</h3>
-                <p>Pro grade video production website designs.</p>
-                <button type="button" class="demo-cta" data-open-demo="Talk Show Land">View concept →</button>
-              </div>
-            </article>
-            <article class="demo-card demo-bento-card" role="listitem" data-spotlight data-reveal-item style="--card-img: url('assets/img/demo-xtronic.png'); --stagger:2">
-              <div class="demo-media" aria-hidden="true">
-                <div class="demo-card-bg"></div>
-              </div>
-              <div class="demo-card-body">
-                <span class="demo-tag">E-Commerce</span>
-                <h3>Xtronic E-Commerece</h3>
-                <p>E-Commerce-driven content platform with step-by-step guides, and custom shop planning integration.</p>
-                <button type="button" class="demo-cta" data-open-demo="Xtronic E-Commerece">View concept →</button>
-              </div>
-            </article>
-            <article class="demo-card demo-bento-card" role="listitem" data-spotlight data-reveal-item style="--card-img: url('assets/img/demo-indie.png'); --stagger:3">
-              <div class="demo-media" aria-hidden="true">
-                <div class="demo-card-bg"></div>
-              </div>
-              <div class="demo-card-body">
-                <span class="demo-tag">interview-format</span>
-                <h3>Indie World Wide Inc.</h3>
-                <p>Professional talk show layout with guest management, episode scheduling, and live audience interaction features.</p>
-                <button type="button" class="demo-cta" data-open-demo="Indie World Wide Inc.">View concept →</button>
-              </div>
-            </article>
-            <article class="demo-card demo-bento-card" role="listitem" data-spotlight data-reveal-item style="--card-img: url('assets/img/demo-podcast.png'); --stagger:4">
-              <div class="demo-media" aria-hidden="true">
-                <div class="demo-card-bg"></div>
-              </div>
-              <div class="demo-card-body">
-                <span class="demo-tag">podcast-platform</span>
-                <h3>The Starting Blocks</h3>
-                <p>Audio-first streaming experience with playlist support, transcriptions, and subscriber management.</p>
-                <button type="button" class="demo-cta" data-open-demo="The Starting Blocks">View concept →</button>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT WE NEED -->
-    <section class="band solid" id="intake">
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">05</span>
-          <span class="ch-label">What We Need From You</span>
-        </div>
-        <div class="chapter-body">
-          <h2>What We Need From You</h2>
-          <p class="lede">To build your Studio Channel, you'll need to provide the following materials. We'll guide you through each step.</p>
-          <ol class="intake-list">
-            <li>
-              <h3>Images &amp; Show Artwork</h3>
-              <p>(or select the add-on) High-resolution logos, professional headshots, and any specific branding graphics (layered .PSD or .AI files are preferred if available).</p>
-              <ul class="chips">
-                <li>High-resolution files</li>
-                <li>Layered .PSD or .AI preferred</li>
-                <li>Logo variations</li>
-                <li>Professional headshots</li>
-                <li>Branding Assets</li>
-              </ul>
-            </li>
-            <li>
-              <h3>Thumbnails</h3>
-              <p>(or select the add-on) Eye-catching, high-contrast images (1920 x 1080px) that clearly represent your episodes or categories at a glance.</p>
-              <ul class="chips">
-                <li>1920 x 1080px resolution</li>
-                <li>High-contrast visuals</li>
-                <li>Episode representations</li>
-                <li>Category images</li>
-              </ul>
-            </li>
-            <li>
-              <h3>Video and/or Audio Files</h3>
-              <p>Direct download links (Dropbox/Drive) or hosted URLs (YouTube/Vimeo) for the primary media content you want featured on the site.</p>
-              <ul class="chips">
-                <li>Dropbox/Drive links</li>
-                <li>YouTube/Vimeo URLs</li>
-                <li>Direct download access</li>
-                <li>Primary media content</li>
-              </ul>
-            </li>
-            <li>
-              <h3>Domain Name</h3>
-              <p>The registered web address (URL) you intend to use, along with the login credentials for your registrar (e.g., SiteGround or Hostinger).</p>
-              <ul class="chips">
-                <li>Registered URL</li>
-                <li>Registrar login access</li>
-                <li>DNS management</li>
-                <li>Secure credentials</li>
-              </ul>
-            </li>
-            <li>
-              <h3>Hosting Account Access</h3>
-              <p>Temporary administrative login details for your web hosting provider so we can configure the server environment and install WordPress.</p>
-              <ul class="chips">
-                <li>Admin login details</li>
-                <li>Server access</li>
-                <li>WordPress installation</li>
-                <li>Temporary credentials</li>
-              </ul>
-            </li>
-          </ol>
-          <p class="note"><strong>Don't have everything ready?</strong> Thumbnail and artwork creation is available as an add-on. We'll guide you through each step of the process.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="band testimonials" id="testimonials" style="--plate: url('assets/img/testimonials-warm.png')">
-      <div class="band-plate" aria-hidden="true"></div>
-      <div class="band-veil band-veil-heavy"></div>
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">06</span>
-          <span class="ch-label">What Creators Are Saying</span>
-        </div>
-        <div class="chapter-body">
-          <h2>What Creators Are Saying</h2>
-          <p class="lede">Real results from creators we've worked with.</p>
-          <div class="quote-row">
-            <blockquote>
-              <p>"I am thrilled to share my experience working with Yolando Brown. Her passion for her work shines through in everything she does. Her extensive knowledge and expertise in web development were invaluable, ensuring that our websites were not only visually stunning but also highly functional and user-friendly."</p>
-              <footer>— <strong>Tige</strong>, Non-Profit Founder</footer>
-            </blockquote>
-            <blockquote>
-              <p>"I am incredibly grateful for the invaluable assistance in creating and developing my website. Their expertise not only helped me build a stunning online presence but also provided exceptional business coaching. The insightful tips and practical tools shared were instrumental in launching my beauty business successfully."</p>
-              <footer>— <strong>Melanie</strong>, Makeup Artist/Stylist</footer>
-            </blockquote>
-            <blockquote>
-              <p>"My experience has been nothing but extraordinary. I needed help with my website that I couldn't put the finishing touches on. She was ready to take on the job, and fix my mess that I had created. She made my website and logo exactly how I imagined them. 5 stars isn't enough."</p>
-              <footer>— <strong>Mrs. Hart</strong>, Laundry Services Founder</footer>
-            </blockquote>
-            <blockquote>
-              <p>"The team was very professional and personable. The business is top-tier and she's a superstar. A very dedicated individual. I will continue to use her services for many years to come and will continue recommending the business to many friends and family!"</p>
-              <footer>— <strong>Kristina</strong>, Client</footer>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BUILT FOR CREATORS + WHAT YOU GET -->
-    <section class="band solid" id="audience">
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">07</span>
-          <span class="ch-label">Built for Creators Like You</span>
-        </div>
-        <div class="chapter-body">
-          <h2>Built for Creators Like You</h2>
-          <p class="lede">Whether you're just starting or ready to grow, this platform is designed for creators who want more control. Creators come to My Studio Channel at different stages, but they all have one thing in common — they want a platform they can own, control, and grow.</p>
-          <ul class="audience-list">
-            <li><strong>Podcasters</strong> — Ready to organize and showcase their content</li>
-            <li><strong>Content Creators</strong> — Tired of relying on social platforms</li>
-            <li><strong>Coaches</strong> — Building a media presence</li>
-            <li><strong>First-Time Launchers</strong> — Creators launching their first platform</li>
-            <li><strong>Network Builders</strong> — Want a professional, network-style presentation</li>
-          </ul>
-          <div class="inline-cta">
-            <h3>Ready to get started?</h3>
-            <p>Book a consultation to discuss your vision.</p>
-            <button type="button" class="btn btn-gold btn-jelly" data-open-consult>Start Now</button>
-          </div>
-
-          <h2 class="mt">What You Get with My Studio Channel</h2>
-          <p class="lede">Launch your own professional media website with everything you need to look like a network.</p>
-          <div class="bento bento-wyg" data-bento data-reveal>
-            <article class="bento-card" data-spotlight data-reveal-item style="--stagger:0">
-              <h3>Consulting &amp; Revisions</h3>
-              <p>Guided consulting calls and included revisions to ensure your site is built correctly, efficiently, and ready for launch.</p>
-            </article>
-            <article class="bento-card bento-wide" data-spotlight data-reveal-item style="--stagger:1">
-              <h3>Studio-Style Website Layout</h3>
-              <p>A professionally designed homepage and show pages that present your content with a clean, network-inspired structure.</p>
-            </article>
-            <article class="bento-card bento-wide" data-spotlight data-reveal-item style="--stagger:2">
-              <h3>Custom Plugin &amp; Media Setup</h3>
-              <p>Includes installation and setup of our proprietary Studio Channel plugin, developed in house to support studio style layouts, content presentation, and professional video and audio embedding.</p>
-            </article>
-          </div>
-
-          <h2 class="mt">Add-Ons &amp; Recommendations</h2>
-          <p class="lede">Enhance your platform with additional tools and services that help your channel look polished and launch successfully.</p>
-          <div class="feature-row feature-row-2">
-            <article>
-              <h3>Thumbnails &amp; Show Artwork</h3>
-              <p>Starting at our rates per show. Includes custom video thumbnails, show artwork, episode artwork, and featured images designed for your platform.</p>
-              <p class="note">Thumbnails are strongly recommended to achieve the intended studio-style layout. Without thumbnails, the visual presentation may be simplified.</p>
-            </article>
-            <article>
-              <h3>Social Media Graphics Package</h3>
-              <p>Starting at industry standard rates. Includes professionally designed website headers, profile images, cover images, and promotional graphics so your brand looks consistent across platforms.</p>
-            </article>
-          </div>
-          <div class="ecosystem">
-            <h3>Our Recommendations</h3>
-            <p>We guide you through the setup and configuration of key elements needed to launch your channel:</p>
-            <ul class="chips">
-              <li>Domain name</li>
-              <li>Hosting</li>
-              <li>Video hosting</li>
-              <li>Professional video player</li>
-              <li>Audio setup</li>
+            <p class="package-best"><strong>Best for:</strong> Creators who already host videos on YouTube and want a premium presentation layer.</p>
+            <a class="btn btn-ghost" href="#contact">START WITH A CONSULTATION ↗</a>
+          </article>
+          <article class="package-card package-popular">
+            <span class="package-tag">MOST POPULAR</span>
+            <h3 class="package-name">Studio Pro</h3>
+            <p class="package-price">$10,800</p>
+            <p class="package-desc">Professional video platform with your own hosted player.</p>
+            <ul class="package-bullets">
+              <li>Everything in Creator Launch</li>
+              <li>Custom Video Player</li>
+              <li>Video hosting via Bunny.net</li>
+              <li>Video delivery powered by Presto Player</li>
+              <li>No ads or platform branding</li>
+              <li>Faster streaming performance</li>
+              <li>Advanced video playback controls</li>
             </ul>
-            <p>We don't just build the website — we help ensure everything is configured properly so your platform works smoothly from day one.</p>
-          </div>
+            <p class="package-best"><strong>Best for:</strong> Creators who want their own professional streaming environment without relying on YouTube.</p>
+            <a class="btn btn-gold" href="#contact">START WITH A CONSULTATION ↗</a>
+          </article>
+          <article class="package-card">
+            <h3 class="package-name">Network Platform</h3>
+            <p class="package-price">$18,800</p>
+            <p class="package-desc">A full content platform with private member access.</p>
+            <ul class="package-bullets">
+              <li>Everything in Studio Pro</li>
+              <li>Custom Membership Website</li>
+              <li>Private login portal</li>
+              <li>Member-only video libraries</li>
+              <li>Paid subscriber access capability</li>
+              <li>Content protection</li>
+              <li>Structured video categories</li>
+              <li>Scalable platform structure</li>
+            </ul>
+            <p class="package-best"><strong>Best for:</strong> Creators launching their own streaming platform, academy, or subscription content network.</p>
+            <a class="btn btn-ghost" href="#contact">START WITH A CONSULTATION ↗</a>
+          </article>
+        </div>
+        <p class="packages-footnote">Payment schedule: 50% deposit / 25% midway / 25% final via PayPal.</p>
+      </div>
+    </section>
+
+    <!-- ⑤ Demos -->
+    <section class="section demos signal-section" id="demos" data-signal>
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">ON AIR</p>
+          <h2 class="display" data-words>Every creator is the network.</h2>
+          <p class="lede">Purpose-built channel experiences for talk, commerce, music, audio, and cinematic storytelling.</p>
+        </header>
+        <div class="demo-row">
+          <article class="demo-card">
+            <div class="demo-media">
+              <img src="assets/demo-talk.jpg" alt="Talk Show Land demo" />
+              <span class="demo-rule" aria-hidden="true"></span>
+            </div>
+            <p class="demo-cat">01 / Talk</p>
+            <h3>Talk Show Land</h3>
+            <p>Pro grade video production website designs.</p>
+          </article>
+          <article class="demo-card">
+            <div class="demo-media">
+              <img src="assets/demo-commerce.jpg" alt="Xtronic E-Commerce demo" />
+              <span class="demo-rule" aria-hidden="true"></span>
+            </div>
+            <p class="demo-cat">02 / Commerce</p>
+            <h3>Xtronic E-Commerce</h3>
+            <p>E-Commerce-driven content platform with step-by-step guides, and custom shop planning integration.</p>
+          </article>
+          <article class="demo-card">
+            <div class="demo-media">
+              <img src="assets/demo-culture.jpg" alt="Indie World Wide Inc. demo" />
+              <span class="demo-rule" aria-hidden="true"></span>
+            </div>
+            <p class="demo-cat">03 / Culture</p>
+            <h3>Indie World Wide Inc.</h3>
+            <p>Professional talk show layout with guest management, episode scheduling, and live audience interaction features.</p>
+          </article>
+          <article class="demo-card">
+            <div class="demo-media">
+              <img src="assets/demo-audio.jpg" alt="The Starting Blocks demo" />
+              <span class="demo-rule" aria-hidden="true"></span>
+            </div>
+            <p class="demo-cat">04 / Audio</p>
+            <h3>The Starting Blocks</h3>
+            <p>Audio-first streaming experience with playlist support, transcriptions, and subscriber management.</p>
+          </article>
+          <article class="demo-card">
+            <div class="demo-media">
+              <img src="assets/demo-doc.jpg" alt="Every Way Woman demo" />
+              <span class="demo-rule" aria-hidden="true"></span>
+            </div>
+            <p class="demo-cat">05 / Documentary</p>
+            <h3>Every Way Woman</h3>
+            <p>Cinematic storytelling platform with chapter navigation, behind-the-scenes content, and filmmaker profiles.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section class="band process" id="process" style="--plate: url('assets/img/process-timeline.png')">
-      <div class="band-plate" aria-hidden="true"></div>
-      <div class="band-veil band-veil-heavy"></div>
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">08</span>
-          <span class="ch-label">A Simple, Guided Process</span>
-        </div>
-        <div class="chapter-body">
-          <h2>A Simple, Guided Process</h2>
-          <p class="lede">Get your platform built and ready to launch in four straightforward steps.</p>
-          <ol class="process-strip">
-            <li>
-              <span class="step-num">01</span>
-              <h3>Book Your Consultation</h3>
-              <p>We start with a call to understand your goals and determine the right setup for your platform.</p>
-              <span class="step-meta">Step 1 of 4</span>
-            </li>
-            <li>
-              <span class="step-num">02</span>
-              <h3>Submit Your Materials</h3>
-              <p>Provide your content, links, and assets so we can begin building your platform.</p>
-              <span class="step-meta">Step 2 of 4</span>
-            </li>
-            <li>
-              <span class="step-num">03</span>
-              <h3>Build &amp; Review</h3>
-              <p>We build your site with you, review it together, and make revisions based on your package.</p>
-              <span class="step-meta">Step 3 of 4</span>
-            </li>
-            <li>
-              <span class="step-num">04</span>
-              <h3>Launch Your Platform</h3>
-              <p>Your site is finalized, delivered, and ready for you to manage and grow.</p>
-              <span class="step-meta">Step 4 of 4</span>
-            </li>
-          </ol>
+    <!-- ⑥ Process -->
+    <section class="section process signal-section" id="process" data-signal>
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">PROCESS</p>
+          <h2 class="display" data-words>Four steps to going live.</h2>
+          <p class="lede">A collaborative build process with clear checkpoints — from the first conversation through delivery.</p>
+        </header>
+        <div class="steps">
+          <article class="step">
+            <span class="step-num">01</span>
+            <h3>Book Your Consultation</h3>
+            <p>We start with a call to understand your goals and determine the right setup for your platform.</p>
+          </article>
+          <article class="step">
+            <span class="step-num">02</span>
+            <h3>Submit Your Materials</h3>
+            <p>Provide your content, links, and assets so we can begin building your platform.</p>
+          </article>
+          <article class="step">
+            <span class="step-num">03</span>
+            <h3>Build &amp; Review</h3>
+            <p>We build your site with you, review it together, and make revisions based on your package.</p>
+          </article>
+          <article class="step">
+            <span class="step-num">04</span>
+            <h3>Launch Your Platform</h3>
+            <p>Your site is finalized, delivered, and ready for you to manage and grow.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="band solid" id="experience">
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">09</span>
-          <span class="ch-label">Built on Experience, Not Guesswork</span>
-        </div>
-        <div class="chapter-body">
-          <h2>Built on Experience, Not Guesswork</h2>
-          <p>We've been creating content and working with creators for over two decades. From early content production with Every Way Woman to building platforms through Inavizion Media and My Creative Space, our work has always centered around helping creators bring their ideas to life.</p>
-          <p>Since 2000, we've designed and built websites for clients across industries, with a focus on creators, entrepreneurs, and media-based businesses. Today, My Studio Channel brings that experience together — helping creators launch their own platform with structure, clarity, and real support.</p>
-          <div class="since-badge">Since 2000 — Building for creators</div>
-          <h3>Who We've Worked With</h3>
-          <ul class="check-list">
-            <li>Creators and entrepreneurs through My Creative Space</li>
-            <li>Content creators, filmmakers, and brands through Inavizion Media</li>
-            <li>Clients from website builds, content capture, and coaching programs</li>
-            <li>Ongoing work with creators launching platforms through My Studio Channel</li>
-          </ul>
+    <!-- ⑦ Voices -->
+    <section class="section voices signal-section" id="voices" data-signal>
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">VOICES</p>
+          <h2 class="display" data-words>Built with care. Remembered.</h2>
+          <p class="lede">Real words from founders and creative professionals who trusted the team with their online presence.</p>
+        </header>
+        <div class="voices-grid">
+          <blockquote class="voice">
+            <p>“I am thrilled to share my experience working with Yolando Brown. Her passion for her work shines through in everything she does. The attention to detail and care she brings made our site feel personal and professional.”</p>
+            <footer><cite>Tige</cite><span>Non-Profit Founder</span></footer>
+          </blockquote>
+          <blockquote class="voice">
+            <p>“I am incredibly grateful for the invaluable assistance in creating and developing my website. The guidance and execution were instrumental in launching my beauty business successfully.”</p>
+            <footer><cite>Melanie</cite><span>Makeup Artist / Stylist</span></footer>
+          </blockquote>
+          <blockquote class="voice">
+            <p>“My experience has been nothing but extraordinary. She made my website and logo exactly how I imagined them. 5 stars isn't enough — the whole process felt collaborative and clear.”</p>
+            <footer><cite>Mrs. Hart</cite><span>Laundry Services Founder</span></footer>
+          </blockquote>
+          <blockquote class="voice">
+            <p>“The team was very professional and personable. Communication stayed clear from start to finish, and I will continue to use her services for many years to come.”</p>
+            <footer><cite>Kristina</cite><span>Client</span></footer>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="band solid faq" id="faq">
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">10</span>
-          <span class="ch-label">Common Inquiries</span>
-        </div>
-        <div class="chapter-body">
-          <h2>Common Inquiries</h2>
-          <div class="faq-list">
-            <details>
-              <summary>Why does pricing start at $5,800?</summary>
+    <!-- ⑧ FAQ -->
+    <section class="section faq signal-section" id="faq" data-signal>
+      <div class="wrap wrap-narrow">
+        <header class="section-head">
+          <p class="eyebrow">ANSWERS</p>
+          <h2 class="display" data-words>Straight answers. No lock-in.</h2>
+          <p class="lede">What your investment covers, what you own, and how your platform operates.</p>
+        </header>
+        <div class="accordion" id="accordion">
+          <div class="acc-item is-open">
+            <button class="acc-trigger" type="button" aria-expanded="true">
+              <span>What does the build include?</span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
               <p>This includes professional video setup, custom plugin installation, consulting, and studio-style layout work. Each platform is built with care to ensure it meets professional network standards.</p>
-            </details>
-            <details>
-              <summary>Do I own my website and content?</summary>
-              <p>Yes. You fully own your site and all content. Unlike platforms that charge monthly fees and hold your content hostage, your platform is built for you to own and operate independently forever.</p>
-            </details>
-            <details>
-              <summary>Do you provide hosting or domains?</summary>
-              <p>No, but we assist with setup and provide recommendations for reliable hosting providers. This keeps you in control of your infrastructure and costs.</p>
-            </details>
-            <details>
-              <summary>Do you host videos?</summary>
-              <p>No, we connect your videos using professional players or platforms like Bunny.net. This gives you flexibility and control over your video hosting costs and performance.</p>
-            </details>
-            <details>
-              <summary>What do I need for consulting calls?</summary>
-              <p>Consulting calls must be attended on a desktop or laptop browser for optimal screen sharing. Mobile devices and tablets are not supported for these sessions.</p>
-            </details>
+            </div>
           </div>
-
-          <h2 class="mt">Policies &amp; Requirements</h2>
-          <p class="lede">To begin your Studio Channel project, please review the following policies. Understanding these ensures a smooth, on-schedule build from start to launch.</p>
-          <div class="policy-grid">
-            <article>
-              <h3>Signed Agreement Required</h3>
-              <p>A signed agreement is required before project commencement. This protects both you and our team and ensures all terms are clearly understood before work begins.</p>
-            </article>
-            <article>
-              <h3>Payment via PayPal Only</h3>
-              <p>Payment is accepted via PayPal only. A 50% non-refundable deposit is required to begin work. The remaining balance is paid in two installments: 25% mid-project and 25% prior to launch.</p>
-            </article>
-            <article>
-              <h3>Materials Submitted Before Work Begins</h3>
-              <p>All required content, assets, and materials must be submitted before your project can begin. Delays in submission may impact your project timeline.</p>
-            </article>
-            <article>
-              <h3>Client Responsibility for Accuracy</h3>
-              <p>Clients are responsible for providing accurate and complete materials, including text, images, video links, and branding elements.</p>
-            </article>
-            <article>
-              <h3>Revisions Are Package-Based</h3>
-              <p>Revisions are limited to the terms of the selected package. Additional revisions beyond what is included may require an additional fee.</p>
-            </article>
-            <article>
-              <h3>Consulting Calls on Desktop Only</h3>
-              <p>Consulting calls must be attended on a desktop or laptop using a web browser. Mobile devices and tablets are not supported for screen sharing sessions.</p>
-            </article>
-            <article>
-              <h3>72-Hour Response Window</h3>
-              <p>All communication and approvals must be completed within 72 hours to keep the project on schedule. Delays in response may result in adjustments to the project timeline.</p>
-            </article>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button" aria-expanded="false">
+              <span>Do I own my website?</span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>Yes. You fully own your site and all content. Unlike platforms that charge monthly fees and hold your content hostage, your platform is built for you to own and operate independently forever.</p>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button" aria-expanded="false">
+              <span>Do you provide hosting?</span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>No, but we assist with setup and provide recommendations for reliable hosting providers. This keeps you in control of your infrastructure and costs.</p>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button" aria-expanded="false">
+              <span>Where are my videos hosted?</span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>We connect your videos using professional players or platforms like Bunny.net. This gives you flexibility and control over your video hosting costs and performance.</p>
+            </div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button" aria-expanded="false">
+              <span>How do consulting calls work?</span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel">
+              <p>Consulting calls must be attended on a desktop or laptop browser for optimal screen sharing. Mobile devices and tablets are not supported for these sessions.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA / CONTACT -->
-    <section class="band cta" id="contact" style="--plate: url('assets/img/cta-launch.png')">
-      <div class="band-plate" aria-hidden="true"></div>
-      <div class="band-veil band-veil-heavy"></div>
-      <div class="chapter" data-chapter-reveal>
-        <div class="chapter-meta">
-          <span class="ch-num">11</span>
-          <span class="ch-label">Ready to Get Started?</span>
+    <!-- ⑨ Final CTA -->
+    <section class="cta signal-section" id="contact" data-signal>
+      <div class="cta-media" aria-hidden="true">
+        <img src="assets/cta.jpg" alt="" />
+        <div class="cta-scrim"></div>
+      </div>
+      <div class="cta-inner wrap">
+        <h2 class="display" data-words>Let's build your platform.</h2>
+        <p class="lede">Tell us what you create and how you want your audience to experience it.</p>
+        <div class="cta-contacts">
+          <a href="tel:+13363031658">(336) 303-1658</a>
+          <a href="mailto:Admin@MyStudioChannel.com">Admin@MyStudioChannel.com</a>
         </div>
-        <div class="chapter-body">
-          <h2>Ready to Get Started?</h2>
-          <p class="lede">Schedule a consultation or reach out with questions — we'll walk you through the process step by step.</p>
-          <div class="contact-row">
-            <div class="contact-card">
-              <h3>Phone</h3>
-              <a href="tel:+13363031658">(336) 303-1658</a>
-            </div>
-            <div class="contact-card">
-              <h3>Email</h3>
-              <a href="mailto:Admin@MyStudioChannel.com">Admin@MyStudioChannel.com</a>
-            </div>
-            <div class="contact-card">
-              <h3>Schedule</h3>
-              <p>Book a consultation call</p>
-              <button type="button" class="btn btn-gold btn-jelly" data-open-consult>Schedule a Call</button>
-            </div>
-          </div>
-
-          <div class="contact-form-wrap">
-            <h3>Send a Message</h3>
-            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
-            <form class="contact-form" id="contact-form" novalidate>
-              <div class="form-row">
-                <label>First Name<input type="text" name="first" autocomplete="given-name" /></label>
-                <label>Last Name<input type="text" name="last" autocomplete="family-name" /></label>
-              </div>
-              <label>Email Address<input type="email" name="email" autocomplete="email" /></label>
-              <label>Subject<input type="text" name="subject" /></label>
-              <label>Message<textarea name="message" rows="5"></textarea></label>
-              <button type="submit" class="btn btn-gold">Send Message</button>
-              <p class="form-note" hidden data-form-note>Demo only — this form does not submit. Use phone or email to reach the team.</p>
-            </form>
-          </div>
-        </div>
+        <a class="btn btn-gold" href="mailto:Admin@MyStudioChannel.com">START WITH A CONSULTATION ↗</a>
       </div>
     </section>
   </main>
 
+  <!-- ⑩ Footer -->
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <strong>My Studio Channel</strong>
-        <span>Creator Platforms</span>
-        <p>Build a platform you own, control, and grow — without relying on social media platforms.</p>
-      </div>
-      <nav class="footer-cols" aria-label="Footer">
-        <div>
-          <h4>Company</h4>
-          <a href="#about">About</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#experience">Since 2000</a>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <a href="#packages">Packages</a>
-          <a href="#demos">Demos</a>
-          <a href="#process">Process</a>
-        </div>
-        <div>
-          <h4>Legal</h4>
-          <a href="#faq">Privacy Policy</a>
-          <a href="#faq">Terms of Service</a>
-          <a href="#contact">Contact</a>
-        </div>
+    <div class="wrap footer-top">
+      <a class="wordmark" href="#top">MY STUDIO CHANNEL</a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#own">Own</a>
+        <a href="#packages">Packages</a>
+        <a href="#demos">Demos</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
-    <div class="footer-bar">
-      <span>© My Studio Channel</span>
-      <span class="ravyn-badge">Ravyn · MSC rebuild · 2026-09-26</span>
+    <div class="wrap footer-bottom">
+      <p>© 2026 My Studio Channel — Built once. Owned forever.</p>
     </div>
   </footer>
-
-  <!-- Command palette (⌘K / Ctrl+K) -->
-  <dialog class="cmdk" id="cmdk" aria-label="Jump to section">
-    <div class="cmdk-card">
-      <label class="cmdk-search">
-        <span class="sr-only">Jump to</span>
-        <input type="search" placeholder="Jump to section…" data-cmdk-input autocomplete="off" />
-        <kbd>esc</kbd>
-      </label>
-      <ul class="cmdk-list" data-cmdk-list>
-        <li><button type="button" data-cmdk-goto="#about">About</button></li>
-        <li><button type="button" data-cmdk-goto="#packages">Packages</button></li>
-        <li><button type="button" data-cmdk-goto="#demos">Demos</button></li>
-        <li><button type="button" data-cmdk-goto="#process">Process</button></li>
-        <li><button type="button" data-cmdk-goto="#faq">FAQ</button></li>
-        <li><button type="button" data-cmdk-goto="#contact">Contact</button></li>
-      </ul>
-    </div>
-  </dialog>
-
-  <!-- Demo concept stub modal -->
-  <dialog class="modal" id="demo-modal" aria-labelledby="demo-title">
-    <form method="dialog" class="modal-card">
-      <header>
-        <h2 id="demo-title">View concept</h2>
-        <button type="submit" class="modal-close" aria-label="Close">×</button>
-      </header>
-      <p data-demo-copy>Concept preview stub — live demos launch soon. Reach the team to walk through a platform build.</p>
-      <button type="button" class="btn btn-gold btn-jelly" data-open-consult>Book Consultation</button>
-    </form>
-  </dialog>
-
-  <!-- Stub consultation modal -->
-  <dialog class="modal" id="consult-modal" aria-labelledby="consult-title">
-    <form method="dialog" class="modal-card">
-      <header>
-        <h2 id="consult-title">Book a Consultation</h2>
-        <button type="submit" class="modal-close" aria-label="Close">×</button>
-      </header>
-      <p>Demo only — this form does not submit. Reach the team at <a href="tel:+13363031658">(336) 303-1658</a> or <a href="mailto:Admin@MyStudioChannel.com">Admin@MyStudioChannel.com</a>.</p>
-      <label>Name<input type="text" name="name" /></label>
-      <label>Email<input type="email" name="email" /></label>
-      <label>Tell us about your channel<textarea name="notes" rows="4"></textarea></label>
-      <button type="button" class="btn btn-gold" data-stub-submit>Request Consultation</button>
-      <p class="form-note" hidden data-modal-note>Thanks — in the live demo this stays stubbed. Please use phone or email.</p>
-    </form>
-  </dialog>
 
   <script src="app.js"></script>
 </body>

@@ -1,72 +1,42 @@
-# MyStudioChannel-Ravyn
+# My Studio Channel — PRIME TIME
 
-> **Your Content. Your Channel. Your Studio.** — Ravyn's own-twist rebuild of My Studio Channel's creator-platform site.
+**Your channel, on air.**
 
-[![GitHub Pages](https://github.com/agentzlab/MyStudioChannel-Ravyn/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/agentzlab/MyStudioChannel-Ravyn/actions/workflows/pages/pages-build-deployment)
-![Last commit](https://img.shields.io/github/last-commit/agentzlab/MyStudioChannel-Ravyn)
-![Repo size](https://img.shields.io/github/repo-size/agentzlab/MyStudioChannel-Ravyn)
-![Static site](https://img.shields.io/badge/site-static-blue)
+Broadcast / signal-lock concept for MyStudioChannel: the visitor tunes into a network. Every section resolves from faint signal grain into full clarity — a **signal lock**.
 
-**Live preview:** https://agentzlab.github.io/MyStudioChannel-Ravyn/
+## Branch
 
-## Hero
+This build lives on `primetime-duel`. GitHub Pages continues to serve `main` only; preview via the branch tree or a local static server.
 
-![MyStudioChannel-Ravyn dark hero](assets/screenshot.png)
+## Stack
 
-## What's inside
+- `index.html` — single page, verbatim PRIME TIME copy
+- `styles.css` — ink / coal / gold / bone tokens, Oswald + Inter
+- `app.js` — signal lock (IntersectionObserver), hero choreography, accordion, mobile nav
+- `assets/` — generated JPG plates (hero, about, demos, CTA)
 
-Ravyn's independent rebuild of [mystudiochannel.com](https://mystudiochannel.com/) — Jon's "My Studio Channel" creator-platforms site. It sells studio-style websites for creators: "the look and structure of a major network — powered by a custom plugin, built once and owned by you."
+No frameworks. No build step. Google Fonts only as the external dependency.
 
-This is the sister build to Trinity's `agentzlab/MyStudioChannel-Remake` — same real copy, Ravyn's own design twist. Key requirements from Jon: **full generated imagery throughout** (no flat placeholder blocks), real copy from the live site, phone-friendly, demo only.
+## Packages
 
-## Design language
+| Tier | Price |
+|------|-------|
+| Creator Launch | $5,800 |
+| Studio Pro (Most Popular) | $10,800 |
+| Network Platform | $18,800 |
 
-- Near-black grounds, warm gold/amber accents
-- **Editorial film-strip / channel-grid** — stacked chapter bands and horizontal programming rows (not a centered broadcast hero)
-- Big display type (Newsreader) with Instrument Sans UI
-- Dark-mode first — no light theme planned
-- Subtle footer badge: `Ravyn · MSC rebuild · 2026-09-26`
-- Full imagery deck: unique art per demo card + section plates for Programming Styles and Own Your Platform
+Payment schedule: 50% deposit / 25% midway / 25% final via PayPal.
 
-## Tech stack
+## Local preview
 
-| Layer | Choice |
-|---|---|
-| Markup | Static `index.html` + `styles.css` + `app.js` |
-| Styling | Hand-written CSS, no framework |
-| Hosting | GitHub Pages (this repo, `main`) |
-
-The source site (`jonbeatz/MyStudioChannel`, private) is Next.js + Payload CMS. The rebuild is static — no CMS, no build step.
-
-## Project structure
-
-```
-MyStudioChannel-Ravyn/
-├── index.html
-├── styles.css
-├── app.js
-├── assets/
-│   ├── screenshot.png      # dark-mode hero shot (~1280×800)
-│   └── img/                # generated section + demo plates
-│       ├── hero-channel-grid.png
-│       ├── about-studio.png
-│       ├── own-platform.png
-│       ├── packages-production.png
-│       ├── programming-shelf.png
-│       ├── demo-talkshow-land.png
-│       ├── demo-xtronic.png
-│       ├── demo-indie.png
-│       ├── demo-podcast.png
-│       ├── demo-everyway.png
-│       ├── testimonials-warm.png
-│       ├── process-timeline.png
-│       └── cta-launch.png
-├── docs/
-│   └── reference.md
-├── .nojekyll
-└── README.md
+```bash
+python3 -m http.server 8080
+# open http://localhost:8080
 ```
 
-## Workflow
+## Contact
 
-Branch-based changes, no PRs unless Jon asks. Screenshots and the README hero stay current with every build change.
+- (336) 303-1658
+- Admin@MyStudioChannel.com
+
+© 2026 My Studio Channel — Built once. Owned forever.
